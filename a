@@ -1,0 +1,13 @@
+.c{
+    background-color: transparent;
+    width: 1350px;
+    height: 65px;
+    border-radius: 2px;
+    text-align: center;
+    border: 2px solid white;
+    background-color: white;
+    float: left;
+    opacity: 30%;
+    text-decoration: black
+    
+}
