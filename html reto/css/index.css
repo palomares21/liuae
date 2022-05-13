@@ -1,0 +1,57 @@
+body, html {
+    background-repeat: no-repeat;
+    background: url(https://static.vecteezy.com/system/resources/previews/001/338/564/large_2x/fluid-modern-purple-background-free-vector.jpg);
+    background-size: 100%;
+    background-size: cover;
+} 
+ul li{
+    width: 145px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border: 2px solid orange;
+    float: left;
+    list-style: none;
+    transition: 1s;
+    font-family: 'Fredoka', sans-serif;
+    color: white;
+    margin-top: 190px;
+    background-color: black;
+}
+ul li:hover{
+    border-radius: 16px;
+    transition: underline;
+}
+.del{
+    position: absolute;
+    margin-top: 190px;
+    margin-left: 600px;
+    color: white;
+    font-size: 30px;
+    text-decoration: underline;
+}
+p{
+    background-color: transparent;
+    width: 1350px;
+    height: 250px;
+    border-radius: 2px;
+    text-align: center;
+    border: 2px solid white;
+    background-color: white;
+    float: left;
+    opacity: 50%;
+    text-decoration: black;
+    margin-top: 0px;
+    font-size: 27px;
+    margin-left: 30px;
+ }
+.foto{
+    position: absolute;
+    width: 150px;
+    margin-left: 590px;
+}
+.bandera{
+    height: 50px;
+    margin-top: 190;
+    margin-left: 30px;
+}

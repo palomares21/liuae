@@ -1,0 +1,48 @@
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>LIUAE</title>
+        <link rel="stylesheet" href="css/servidor web.css">
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div>
+            <header> 
+               <nav>
+                   <ul class="menu-horizontal">
+                       <li><a href="">Inicio</a></li>
+                       <li>
+                           <a href="../html reto/index.html">Índice</a>
+                       </li>
+                       <li>
+                           <a href="#">Idiomas</a>
+                           <ul class="menu-vertical">
+                     <li><a href="servidor web.html">Castellano</a></li>
+                               <li><a href="servidor web euskera.html">Euskera</a></li>
+                               <li><a href="servidor web ingles.html">Ingles</a></li>
+                           </ul>
+                       </li>
+                       
+           
+                   </ul>
+               </nav>
+           </header>
+        </div>
+        
+     <h1>SERVIDOR WEB</h1>
+        <p class="q">Pones en la terminal <b> cd /var/www/html</b> para acceder al index.html pero primero crea el archivo con nano index.html</p>
+        <img class="foto" src="../html reto/images/Captura de pantalla de 2022-05-03 12-32-46.png" alt="">
+        <p class="w">Para entrar al index.html escribes <b>nano index.html</b> ejemplo=
+        </p>
+        <img class="foto2" src="../html reto/images/Captura de pantalla de 2022-05-03 12-35-06.png" alt="">
+        <p class="t">Entras en <b> /etc/resolv.conf </b> pones nameserver 8.8.8.8 y nameserver 8.8.4.4</p>
+        <p class="e">Luego instalamos certbot: <b> apt install certbot apt install python3-certbot-apache </b> después de instalar certbot entramos en <b> /etc/apache2/sites-enabled/ </b>  y nos metemos en el archivo 000-default conf descomentamos el server name y ponemos la dirección del duckdns te tiene que quedar más o menos como en la foto.</p>
+        <img class="foto3" src="../html reto/images/Captura de pantalla de 2022-05-03 12-43-38.png" alt="">
+        <p class="r">Luego ponemos <b>sudo certbot –apache</b>
+            y sigues los pasos: 1. a@a.com 2. A 3. n 4. le das al enter 5. para terminar pones 2 y así conseguiremos el certificado.</p>
+        <img class="foto4" src="../html reto/images/Captura de pantalla de 2022-05-03 12-56-27.png" alt="">
+        <br>
+        <img class="logo" src="../html reto/images/photo-removebg-preview.png" alt=""> 
+        <footer> © 2022 Liuae</footer> 
+    </body>
+</html>

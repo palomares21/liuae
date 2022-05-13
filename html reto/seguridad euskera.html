@@ -1,0 +1,44 @@
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Segustasuna</title>
+        <link rel="stylesheet" href="css/seguridad.css">
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet"> 
+
+    <body>
+        <div>
+            <header> 
+               <nav>
+                   <ul class="menu-horizontal">
+                       <li><a href="">Inicio</a></li>
+                       <li>
+                           <a href="../html reto/index.html">Índice</a>
+                       </li>
+                       <li>
+                           <a href="#">Idiomas</a>
+                           <ul class="menu-vertical">
+                     <li><a href="seguridad.html">Castellano</a></li>
+                               <li><a href="seguridad euskera.html">Euskera</a></li>
+                               <li><a href="seguridad ingles.html">Ingles</a></li>
+                           </ul>
+                       </li>
+                       
+           
+                   </ul>
+               </nav>
+           </header>
+        </div>
+     <h1>Segurtasuna </h1>
+        <p class="q">Lo primero que hay que hacer es un <b>apt update & apt upgrade</b></p>
+        <img class="foto" src="../html reto/images/Captura de pantalla de 2022-05-05 13-39-58.png" alt="">
+        <p class="w">Cuando tengamos todo instalado nos ponemos en sudo y ponemos <b>mysql -u root.</b> Ahora procederemos a crear una base de datos create database nextcloud; no olvides poner ; al final de cada comando.Teniendo la base de datos creada ahora tendremos que crear un usuario con contraseña <b>create user (nombre) identified by (contraseña)</b>; ahora procederemos a darle permisos <b>grant all privileges on *.* to (nombre) with grant option;<br> flush privileges; <br></b>para salir ponemos <b>exit.</b><br><br>Habiendo hecho todo lo anterior vamos a la carpeta html para llegar a ella ponemos <b>cd /var/www/html </b> ahora instalamos nextcloud <b>wget https://download.nextcloud.com/server/releases/nextcloud-23.0.0.zip.</b>En este momento para descomprimir el archivo zip deberemos de instalar el comando unzip para ello ponemos <b>apt install unzip.</b>Teniendo instalado el <b>unzip</b> procedemos a descomprimir el archivo <b>unzip nextcloud-23.0.0.zip </b>  habiendo puesto este comando ahora tendremos una carpeta en <b>/var/www/html</b> llamada nextcloud.<br><br><br>Toca dar permisos y para ello ponemos <b>chown www-data:www-data nextcloud -R</b> después pones <b>chmod 775 nextcloud -R.</b><br><br>Ahora vamos al duckdns y creamos un dominio</p>        <p class="w">Habiendo creado el dominio vamos a  <b>cd /etc/apache2/sites-enabled </b> aquí tendremos un archivo llamado <b>000-default.conf.</b> Donde pone domain name ponemos la dirección de nuestro duckdns y al lado de html ponemos nextcloud.</p>
+        <img class="foto2" src="../html reto/images/Captura de pantalla de 2022-05-05 08-17-44.png" alt="">
+        <p class="t">ahora vamos a aumentar el almacenamiento de nextcloud entra a  <b> nano /etc/php/7.4/apache/php.ini </b> y en este archivo  buscamos post_max_size y lo aumentamos y también buscamos file_upload_max_size y lo aumentas y luego guardamos el archivo hacemos un systemctl restart apache2 y ahora vamos a google y ponemos nuestra dirección de duckdns.Ahora instalamos todo lo que nos pide.</p>
+        <img class="foto3" src="../html reto/images/Captura de pantalla de 2022-05-05 08-23-38.png" alt="">
+        <p class="e">Después de instalarlo rellenamos los datos y listo 
+        <img class="foto4" src="../html reto/images/Captura de pantalla de 2022-05-05 09-19-04.png" alt="">
+        <br>
+        <img class="logo" src="../html reto/images/photo-removebg-preview.png" alt=""> 
+        <footer> © 2022 Liuae</footer> 
+    </body>
+</html>

@@ -1,0 +1,127 @@
+h1{
+   margin-left: 560px;
+   color: black;
+   background-color: yellow;
+   margin-right: 590px;
+   text-align: center;
+}
+body, html {
+   background-repeat: no-repeat;
+   background: url(https://static.vecteezy.com/system/resources/previews/001/338/564/large_2x/fluid-modern-purple-background-free-vector.jpg);
+   background-size: 100%;
+   background-size: cover;
+}
+nav{
+    max-width: 900px;
+    margin: auto;
+    background-color: #333;
+    font-size: 20px;
+    margin-top: 50px;
+ }
+ .menu-horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+ }
+ .menu-horizontal > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+ }
+ .menu-horizontal > li:hover{
+    background-color: red;
+ }
+ .menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, .5);
+ }
+ .menu-horizontal li:hover .menu-vertical{
+    display: block;
+ }
+ .menu-vertical li:hover{
+    background-color: black;
+ }
+  
+ .menu-vertical li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 15px 15px 20px;
+ }
+  
+ .c{
+    background-color: transparent;
+    width: 1350px;
+    height: 65px;
+    border-radius: 2px;
+    text-align: center;
+    border: 2px solid white;
+    background-color: white;
+    float: left;
+    opacity: 80%;
+    text-decoration: black
+   
+ }
+ .q{
+   margin-left:300px;
+   color: white;
+   margin-right: 300px;
+   text-align: center;
+}
+.foto{
+   margin-left: 400px;
+}
+.w{
+   margin-left: 350px;
+   color: white;
+   margin-right: 350px;
+   text-align: center;
+}
+.foto2{
+    margin-left: 400px;
+}
+.foto3{
+   margin-left: 400px;
+   margin-top: 10px;
+}
+.e{
+   margin-left: 330px;
+   color: white;
+   text-align: center;
+   margin-right: 420px;
+}
+.foto4{
+   margin-left: 70px;
+   margin-top: 10px;
+}
+.logo{
+   margin-top: 30px;
+   height: 150px;
+   margin-left: 0px;
+}
+.r{
+   margin-left: 330px;
+   color: white;  
+   margin-right: 386px; 
+   text-align: center;
+}
+.t{
+   margin-left: 360px;
+   color: white;
+   margin-right: 380px;
+   text-align: center;
+}
+b{
+    background-color: black;
+
+}
+footer{
+    margin-left: 610px;
+    color: white;
+}
+  
+ 

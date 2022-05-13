@@ -1,0 +1,46 @@
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>LIUAE</title>
+        <link rel="stylesheet" href="css/nextcloud.css">
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div>
+            <header> 
+               <nav>
+                   <ul class="menu-horizontal">
+                       <li><a href="">Home</a></li>
+                       <li>
+                           <a href="../html reto/index ingles.html">Index</a>
+                       </li>
+                       <li>
+                           <a href="#">Languages</a>
+                           <ul class="menu-vertical">
+                     <li><a href="nexcloud.html">Spanish</a></li>
+                               <li><a href="nexcloud euskera.html">Vasque</a></li>
+                               <li><a href="nextcloud ingles.html">English</a></li>
+                           </ul>
+                       </li>
+                       
+           
+                   </ul>
+               </nav>
+           </header>
+        </div>
+        
+     <h1>NEXTCLOUD</h1>
+        <p class="q">Before starting with the installation of nextcloud we have to do an   <b> apt update y upgrade</b>. After the update and upgrade we do an<b> apt install apache2 php php-mysql mysql-server</b>.</p>
+        <p class="w">When we have everything installed we put in sudo and put <b>mysql -u root.</b> Now we will proceed to create a database create database nextcloud; do not forget to put ; at the end of each command.Having the database created now we will have to create a user with password <b>create user (nombre) identified by (contraseña)</b>; now we will proceed to give permissions  <b>grant all privileges on *.* to (nombre) with grant option;<br> flush privileges; <br></b>to exit we put <b>exit.</b><br><br>having done all the above we go to the folder html to get to it we put <b>cd /var/www/html </b> now we install nextcloud <b>wget https://download.nextcloud.com/server/releases/nextcloud-23.0.0.zip.</b>At this moment to decompress the zip file we will have to install the unzip command for it we put <b>apt install unzip.</b>Having installed the unzip we proceed to unzip the file<b>unzip nextcloud-23.0.0.zip </b>  having put this command now we will have a folder in <b>/var/www/html</b> called nextcloud. <br><br><br>It is time to give permissions and for this we put <b>chown www-data:www-data nextcloud -R</b> then you put  <b>chmod 775 nextcloud -R.</b><br><br>Now we go to duckdns and create a domain.</p>
+        <img class="foto" src="../html reto/images/Captura de pantalla de 2022-05-04 14-04-25.png" alt="">
+        <p class="w">Having created the domain we go to  <b>cd /etc/apache2/sites-enabled </b>here we will have a file called <b>000-default.conf.</b> Where it says domain name we put the address of our duckdns and next to html we put nextcloud.</p>
+        <img class="foto2" src="../html reto/images/Captura de pantalla de 2022-05-05 08-17-44.png" alt="">
+        <p class="t">Now we are going to increase the storage of nextcloud go to  <b> nano /etc/php/7.4/apache/php.ini </b> and in this file look for post_max_size and increase it and also look for file_upload_max_size and increase it and then save the file do a systemctl restart apache2 and now go to google and put our duckdns address.Now we install everything it asks for.</p>
+        <img class="foto3" src="../html reto/images/Captura de pantalla de 2022-05-05 08-23-38.png" alt="">
+        <p class="e">After installing it we fill in the data and we are done. 
+        <img class="foto4" src="../html reto/images/Captura de pantalla de 2022-05-05 09-19-04.png" alt="">
+        <br>
+        <img class="logo" src="../html reto/images/photo-removebg-preview.png" alt=""> 
+        <footer> © 2022 Liuae</footer> 
+    </body>
+</html>

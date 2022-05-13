@@ -1,0 +1,46 @@
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>LIUAE</title>
+        <link rel="stylesheet" href="css/nextcloud.css">
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div>
+            <header> 
+               <nav>
+                   <ul class="menu-horizontal">
+                       <li><a href="">Hasiera</a></li>
+                       <li>
+                           <a href="../html reto/index euskera.html">Aurkibidea</a>
+                       </li>
+                       <li>
+                           <a href="#">Hizkuntzak</a>
+                           <ul class="menu-vertical">
+                     <li><a href="nexcloud.html">Gaztelaniaz</a></li>
+                               <li><a href="nexcloud euskera.html">Euskara</a></li>
+                               <li><a href="nextcloud ingles.html">Ingelesa</a></li>
+                           </ul>
+                       </li>
+                       
+           
+                   </ul>
+               </nav>
+           </header>
+        </div>
+        
+     <h1>NEXTCLOUD</h1>
+        <p class="q">Nextcloud instalatzen hasi aurretik, <b> apt update y upgrade</b>  bat egin behar dugu.  Updatearen eta upgradearen ondoren,<b> apt install apache2 php php-mysql mysql-server</b>egingo dugu.</p>
+        <p class="w">Dena instalatuta dugunean, izerditan jarri eta <b>mysql -u root</b>jarriko dugu. Orain create database nextcloud datu-base bat sortuko dugu; ez ahaztu jartzea; komando bakoitzaren amaieran.Datu-basea sortu ondoren,  <b>create user (nombre) identified by (contraseña)</b>; pasahitza duen erabiltzaile bat sortu beharko dugu; orain,<b>grant all privileges on *.* to (nombre) with grant option;<br> flush privileges; <br></b>ateratzeko  <b>exit</b> jartzen dugu.<br><br>Aurreko guztia eginda, html karpetara joango gara, bertara iristeko: <b>cd /var/www/html </b> orain next cloud instalatuko dugu.<b>wget https://download.nextcloud.com/server/releases/nextcloud-23.0.0.zip.</b>Une honetan, zip fitxategia deskonprimatzeko, unzip komandoa instalatu beharko dugu; horretarako,<b>apt install unzip</b> jarriko dugu.Unzip instalatuta edukita, <b>unzip nextcloud-23.0.0.zip </b>   fitxategia deskonprimitzen hasiko gara, eta komando hau jarri ondoren, orain nextcloud izeneko karpeta bat izango dugu<b>/var/www/html</b>.<br><br><br>Baimenak ematea tokatzen da, eta horretarako <b>chown www-data:www-data nextcloud -R</b> gero jartzen dugu <b>chmod 775 nextcloud -R.</b><br><br>Orain duck-era goaz eta domeinu bat sortuko dugu.</p>
+        <img class="foto" src="../html reto/images/Captura de pantalla de 2022-05-04 14-04-25.png" alt="">
+        <p class="w">Domeinua sortu ondoren, hona goaz:<b>cd /etc/apache2/sites-enabled </b> Hemen <b>000-default.conf.</b> Domain name jartzen duen lekuan, gure duckdn-aren helbidea jarriko dugu, eta html-ren ondoan nextcloud jarriko dugu.</p>
+        <img class="foto2" src="../html reto/images/Captura de pantalla de 2022-05-05 08-17-44.png" alt="">
+        <p class="t">Orain nextcloud-en biltegiratzea handitu egingo dugu sartu hemen <b> nano /etc/php/7.4/apache/php.ini </b>Eta fitxategi honetan post_max_size bilatzen dugu, eta handitu egiten dugu; era berean, file_upload_max_size bilatzen dugu, eta handitu egiten duzu. Gero, artxiboa gordeko dugu, systemctl restart apache2 bat egingo dugu, eta orain googlera joan eta gure duckdns helbidea jarriko dugu.Orain eskatzen digun guztia instalatzen dugu.</p>
+        <img class="foto3" src="../html reto/images/Captura de pantalla de 2022-05-05 08-23-38.png" alt="">
+        <p class="e">Instalatu ondoren, datuak bete eta prest 
+        <img class="foto4" src="../html reto/images/Captura de pantalla de 2022-05-05 09-19-04.png" alt="">
+        <br>
+        <img class="logo" src="../html reto/images/photo-removebg-preview.png" alt=""> 
+        <footer> © 2022 Liuae</footer> 
+    </body>
+</html>
